@@ -362,7 +362,7 @@ html{
         .uno img{
             grid-row: 1/1;
             grid-column: 3/8;
-            width: 65%;
+            width: 55%;
             border-radius: 25px;
             height: 100%;
         }
@@ -377,7 +377,7 @@ html{
         .dos img{
             grid-row: 1/1;
             grid-column: 8/12;
-            width: 100%;
+            width: 65%;
             border-radius: 25px;
             height: 100%;
         }
@@ -559,7 +559,21 @@ html{
 
     }
 
+/* transformacione para github */
+
+h2:hover{
+    transform: rotate(-350deg);
+}
+
+h3:hover{
+    transform: scale(1.25);
+    
+}
 
 
+
+img:hover{
+    transform: scale(1.25);
+}
 
 
