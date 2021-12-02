@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap');
+*{
+    margin: 0%;
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Coustard';
+    font-weight: 400;
+}
+
+
+    /* pagina index */
+
+        header{
+            position: relative;
+            top: 0%;
+            background-color: rgb(17, 157, 192);
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px 25px 10px 25px;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: flex;
+            margin: 15px 0;
+        }
+        
+        a{
+            color: white;
+        }
+
+        h2{
+            font-size: 35px;
+            font-family: 'Coustard';
+            font-weight: 400;
+            text-align: center;   
+        }
+
+        .uno{
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            align-items: center;
+        }
+
+        .uno img{
+            grid-row: 1/2;
+            grid-column: 4/10;
+            width: 225px;
+            border-radius: 25px;
+            height: 300px;
+        }
+
+        .uno p{
+            grid-row: 2/2;
+            grid-column: 4/10;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .dos{
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            align-items: center;
+        }
+
+        .dos img{
+            grid-row: 1/2;
+            grid-column: 4/10;
+            width: 225px;
+            border-radius: 25px;
+            height: 300px;
+        }
+
+        .dos p{
+            grid-row: 2/2;
+            grid-column: 4/10;
+            text-align: center;
+            font-size: 16px
+        }
+
+        footer{
+            font-size: 13px;
+            border-bottom: 2px;
+            border-style: ridge;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(138, 151, 148);   
+        }
+
+        footer ul{
+            list-style-type: none;
+        }
+
+    /* pagina servicios */
+
+        .mecanica {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    /* pagina trabajos */
+
+        .videos{
+            display: flex;
+            padding: 50px 10px 100px 10px;
+            text-align: center;
+            flex-direction: column;
+        }
+
+
+    /* pagina consejos */
+
+        .cuida{
+            padding: 10px;
+        }
+        .cuida h3{
+            grid-column: 3/11;
+            grid-row: 1/2;
+            width: 100%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .parra{
+            list-style-type: circle;
+            grid-row: 3/3;
+            grid-column: 3/12;
+            font-size: 13px;
+        }
+
+        .cuida img{
+            grid-row: 2/2;
+            grid-column: 4/10;
+            width: 100%;
+        }
+
+        .frenos{
+            padding: 10px;
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+        
+        }
+
+        .frenos h3{
+            grid-column: 4/9;
+            grid-row: 1/2;
+            width: 100%;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .frenos p {
+            grid-row: 3/3;
+            grid-column: 4/10;
+            line-height: 2rem;
+        }
+        .frenos img{
+            grid-row:2/2;
+            grid-column:1/12;
+            width:100%;
+        }
+
+
+        .luces{
+            padding: 10px;
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+        
+        }
+        .luces h3{
+            grid-column: 3/11;
+            grid-row: 1/2;
+            width: 100%;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .luces p {
+            grid-row: 3/3;
+            grid-column: 4/10;
+            line-height: 2rem;
+    
+        }
+
+        .luces img{
+            grid-row:2/2;
+            grid-column:1/12;
+            width:100%;
+        }
+
+
+    /* pagina contacto  */
+
+        .contacto{
+            display: flex;
+            justify-content: center; 
+            padding: 200px 100px;
+            text-align: center;   
+        }
+
+        select{
+            color: black;
+            border-radius: 25px;
+            margin-left: 16px;
+        }
+
+        textarea{
+            border-radius: 5px;
+            height: 100px;
+            width: 180px;
+        }
+
+        input{
+            color: black;
+        }
+
+        #comentario{
+            color: black;
+        }
+
+        .horario{
+            color: black;
+        }
+
+        .formulario{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formulario h3{
+            grid-row: 1/1;
+            grid-column: 1/3;
+            text-align: center;
+        }
+
+        .formulario form{
+            display: grid;
+            justify-content: space-evenly;
+            justify-items: center;
+        }
+
+        form input{
+            margin: 1rem;
+            height: 55%;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .enviar{
+            display: inline-flex;
+        }
+
+
+
+ /* media queries responsive */
+
+
+@media screen and (min-width:768px) {
+
+    /* header */
+
+        header{
+            position: sticky;
+        }
+
+        nav{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .li-nav{
+            display: inline;
+            padding-left: 50px;
+            margin-right: 10px;
+        }
+
+        nav{
+            animation-name: nav;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+        }
+
+    @keyframes nav {
+            0%{
+                transform: translate(-30vw);
+            }
+
+            100%{
+                transform: translateX(2vw);
+            }
+            
+            }
+
+        li a:hover{
+            animation-name:boton;
+            animation-duration: 2s; 
+            animation-iteration-count: 1;
+            padding: 5px;
+            border: 3px solid white;
+            border-style:ridge;
+        }
+    
+    @keyframes boton{
+        40%{background: rgb(24, 192, 184)}
+        }
+
+    /* foooter */
+    
+        footer{
+            padding: 15px 25px;
+            justify-content: space-between;
+            flex-direction: row;
+   
+        }
+
+        footer ul{
+            list-style-type: none;
+        }
+
+        .arriba{
+            border: 3px outset white;
+            border-radius: 5px;
+            padding: 3px;
+        }
+
+        .designe{
+            padding: 5px 1px;
+        }
+
+    /* pagina index */
+
+        .uno{
+            margin-top: 35px;
+        }
+
+        .uno p{
+            grid-row: 1/1;
+            grid-column: 8/12;
+            text-align: center;
+            font-size: 2rem
+        }
+
+        .uno img{
+            grid-row: 1/1;
+            grid-column: 3/8;
+            width: 65%;
+            border-radius: 25px;
+            height: 100%;
+        }
+
+        .dos{
+            justify-content: space-between;
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+        }
+        
+        .dos img{
+            grid-row: 1/1;
+            grid-column: 8/12;
+            width: 100%;
+            border-radius: 25px;
+            height: 100%;
+        }
+        
+        .dos p{
+            grid-row: 1/1;
+            grid-column: 2/5;
+            text-align: center;
+            font-size: 2rem
+        }
+
+    /* pagina servicios */
+
+         .mecanica {
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 200px
+        }
+
+        .general{
+            padding: 10px;
+        }
+
+        .detalles{
+            padding: 10px
+        }
+        
+        .general img{
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        .detalles img{
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        .diagnostico img{
+            width: 100%;
+            border-radius: 25px;
+        }
+
+    /* pagina trabajos */
+
+        .videos{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-direction: row;
+            padding: 200px;
+        }
+
+    /* pagina consejos */
+
+        .cuida{
+            justify-content: space-between;
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+
+        }
+
+        .cuida h3{
+            grid-column: 2/6;
+            grid-row:1/2;
+            width:100%;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .parra{
+            list-style-type:circle;
+            grid-row: 2/2;
+            grid-column: 7/12;
+            font-size: 13px;
+        }
+               
+        .cuida img{
+            grid-row: 2/2;
+            grid-column: 2/8;
+            width: 65%;
+            height: 100%;
+            border-radius: 25px;
+        }
+
+        .frenos{
+            justify-content: space-between;
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+        }
+
+        .frenos h3{
+            grid-column: 2/6;
+            grid-row:1/2;
+            width:100%;
+            font-size: 18px;
+            text-align: center;
+        }
+                
+        .frenos p {
+            grid-row:2/2;
+            grid-column:7/12;
+            line-height: 16px;
+        }
+
+        .frenos img{
+            grid-row: 2/2;
+            grid-column: 2/8;
+            width: 65%;
+            height: 100%;
+            border-radius: 25px;
+        }
+        
+        .luces{
+            justify-content: space-between;
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+            padding: 30px;
+        }
+
+        .luces h3{
+            grid-column: 2/6;
+            grid-row:1/2;
+            width:100%;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .luces p {
+            grid-row:2/2;
+            grid-column:7/12;
+            line-height: 16px
+        }
+
+        .luces img{
+            grid-row: 2/2;
+            grid-column: 2/8;
+            width: 65%;
+            height: 100%;
+            border-radius: 25px;
+        }
+
+    /* pagina contacto */
+
+        .formulario{
+            display:grid;
+            grid-template-rows: repeat(2,1);
+            grid-template-columns: repeat(12,1fr);
+            justify-content:center;
+            padding: 25vh;
+        }
+
+        .formulario h3{
+            grid-row: 1/1;
+            grid-column: 3/6;
+        
+        }
+
+        .formulario form{
+            grid-row: 2/3;
+            grid-column: 2/12;
+            display:grid;
+        }
+
+        form input{
+            width: 100%;
+            padding: 0 25px;
+        }
+
+        textarea{
+            border-radius: 5px;
+            height: 100px;
+            width: 180px;
+        }
+
+    }
+
+
+
+
+
