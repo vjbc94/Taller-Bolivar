@@ -128,9 +128,6 @@ html{
 
     /* pagina consejos */
 
-        .cuida{
-            /* padding: 10px; */
-        }
         .cuida h3{
             grid-column: 3/11;
             grid-row: 1/2;
