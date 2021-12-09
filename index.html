@@ -6,54 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio-Taller Bolivar</title>
+
     <!--Iconos-->
+
     <link rel="shortcut icon" href="imagenes/mecanico.png" type="icono">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--css-->
     <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 
 <body>
     <!--Menu Navegacion-->
-    <header>    
-        <nav class="nav-superior">
-            <a href="index.html">
-                <img width="100" src="imagenes/bolivar.png" alt="Logo">
-            </a>
-            <ul class="nav-ul">
-                <li class="li-nav">
-                    <a href="#">Inicio</a>
-                </li class="li-nav">
-                <li class="li-nav">
-                    <a href="paginas/servicios.html">Servicios</a>
-                </li>
-                <li class="li-nav">
-                    <a href="paginas/trabajos.html">Trabajos</a>
-                </li>
-                <li class="li-nav">
-                    <a href="paginas/consejos.html">Consejos</a>
-                </li>
-                <li class="li-nav">
-                    <a href="paginas/turnos.html">Turnos</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img width="100" src="imagenes/bolivar.png" alt="Logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="#">Inicio</a>
+                        </li class=>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="paginas/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="paginas/trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="paginas/consejos.html">Consejos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="paginas/turnos.html">Turnos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- main -->
 
     <main>
-        <h2 id="encabezado">Nosotros</h2>
-        <!-- <section class="uno">
+        <h2 class="fs-1">Nosotros</h2>
+        <section class="uno">
             <img height="250" src="imagenes/foto.jpg" alt="nosotros uno">
             <p>
                 Somos una empresa dedicada al mantenimientos y restauracion de autos. Nos especializamos en
-                darle
-                todo el detalle, acondicionamiento, para que tu auto tenga una vida util.
+                darle todo el detalle, acondicionamiento, para que tu auto tenga una vida util.
             </p>
-        </section> -->
+        </section>
         <section class="dos">
             <p>
                 Contamos con mas de 30 años de experiencia en el rubro, aplicamos todo tipo de tratamientos a tu
@@ -68,14 +81,22 @@
     <footer class="footer">
         <div class="footer-div">
             <ul class="footer-ul">
-                <li class="ul-li">Telefono: 011-5139 0703</li>
-                <li class="ul-li">Mail: vjbc94@gmail.com</li>
-                <li class="ul-li">Ubicacion: Venezuela. Caba, Buenos Aires, Argentia.</li>
-                <li class="ul-li">Horario 8am-1pm/2pm-6pm</li>
+                <li class="ul-li">
+                    <img src="imagenes/llamada.png"> Telefono: 011-5139 0703
+                </li>
+                <li class="ul-li">
+                    <img src="imagenes/email.png"> Mail: vjbc94@gmail.com
+                </li>
+                <li class="ul-li">
+                    <img src="imagenes/pin-de-ubicacion.png"> Ubicacion: Bacacay 2532. Caba, Buenos Aires, Argentia.
+                </li>
+                <li class="ul-li">
+                    <img src="imagenes/reloj-de-pared.png"> Horario 8am-1pm/2pm-6pm
+                </li>
             </ul>
         </div>
         <div class="paginas">
-            <a class="arriba" href="#encabezado">Ir arriba</a>
+            <a href='#' title='ir arriba'><img alt='Ir arriba' src="imagenes/flecha-hacia-arriba(1).png" /></a>
             <img height="25" src="imagenes/fb-logo.png" alt="">
             <img height="25" src="imagenes/ig-logo.png" alt="">
             <div class="designe">
@@ -85,6 +106,9 @@
     </footer>
 
     <!--Bootstrap Js -->
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/js/bootstrap.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
