@@ -523,11 +523,6 @@ html{
     /* pagina contacto */
 
         .formulario{
-            /* display: flex;
-            
-            grid-template-rows: repeat(2,1);
-            grid-template-columns: repeat(12,1fr);
-            justify-content:center; */
             padding: 15vh;
         }
 
