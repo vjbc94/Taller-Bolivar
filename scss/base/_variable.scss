@@ -1,0 +1,50 @@
+$bg-header: black ;
+$bg-footer: rgb(138, 151, 148);
+
+/* Mapas */
+$cuadros: (
+    cuadrouno:  green,
+    cuadrodos: red,
+    cuadrotres: yellow,
+);
+
+@each $fondo, $color in $cuadros {
+    .general-#{$fondo} {
+        background-color: $color;}
+}
+
+/* Extend */
+
+.ul-li{
+    font-size:  16px;
+}
+
+.extend{
+    @extend .ul-li;
+    font-size: 25px;
+    color: blue;
+}
+
+/* Mixin */
+
+@mixin img {
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+.img {
+    @include img
+}
+
+.barra{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    .barra-sub{
+    border: solid 1px black;
+    width: 250px;
+    align-items: center;
+    }
+}
+

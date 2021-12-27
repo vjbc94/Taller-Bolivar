@@ -5,21 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consejos-Taller Bolivar</title>
-    <link rel="shortcut icon" href="../imagenes/mecanico.png" type="icono">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/main.css">
-    <!-- Bootstrap -->
+    <title>Taller Bolivar</title>
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="icono">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-
-    <!-- Menu navegacion -->
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -55,24 +49,26 @@
     <!-- main -->
 
     <main>
-        <h2 id="encabezado">Consejos</h2>
-
+        <div class="barra">
+            <h2 class="fs-1">Consejos</h2>
+            <hr class="barra-sub">
+        </div>
         <section class="cuimotor">
             <h3>Cuida de tu motor</h3>
-            <img height="200" src="../imagenes/cuida.jpg">
-                <p>
-                   Cambio de aceite regularmente, lo recomendable es cada 5000km.
-                    Mantener limpio el motor, con el tiempo se puede generar una capa de polvo en el radiador y generar
-                    una pérdida de refrigeración.
-                    Recargar el tanque antes de que llegue al mínimo,
-                    el combustible tiene cierta cantidad de sedimentos, los residuos se van acumulando, y pasarán
-                    algunos al motor ocasionando un daño interno. 
-                </p>
+            <img src="../imagenes/cuida.jpg">
+            <p>
+                Cambio de aceite regularmente, lo recomendable es cada 5000km.
+                Mantener limpio el motor, con el tiempo se puede generar una capa de polvo en el radiador y generar
+                una pérdida de refrigeración.
+                Recargar el tanque antes de que llegue al mínimo,
+                el combustible tiene cierta cantidad de sedimentos, los residuos se van acumulando, y pasarán
+                algunos al motor ocasionando un daño interno.
+            </p>
         </section>
 
         <section class="frenos">
             <h3>Frenos</h3>
-            <img height="200" src="../imagenes/frenos.jpg" alt="frenos">
+            <img src="../imagenes/frenos.jpg" alt="frenos">
             <p> Es necesario revisar el líquido de frenos cada cierto tiempo, para mantener su eficiencia. Lo
                 recomendable es hacerlo cada 30.000km. Verificar el estado de las pastillas de freno delantero cada
                 15.000km, revisar las pastillas de frenos traseros cada 30.000km.
@@ -81,16 +77,17 @@
 
         <section class="luces">
             <h3>Luces y Carroceria</h3>
-            <img height="200" src="../imagenes/luces.jpg" alt="">
+            <img src="../imagenes/luces.jpg" alt="">
             <p>Revisa periodicamente que todas las luces externas de tu vehículo estén en condiciones. Una manera rapida
                 y fácil de hacerlo es sentarte al volante y, con el auto detenido, accionar de a uno por vez los
                 comandos de las luces bajas, altas, las de posicion, de giro, de freno y las de marcha atrás.
-
                 Guardar el coche en el garaje, Lavar el coche con frecuencia, Despues de lavar, encerar, Pule y
                 descontamina la pintura del vehiculo cada 2/3 años arregla los daños según se vayan produciendo.
             </p>
         </section>
     </main>
+
+    <!-- footeer -->
 
     <footer class="footer">
         <div class="footer-div">
@@ -117,10 +114,11 @@
                 <p> Designe By Victor Bolivar</p>
             </div>
         </div>
+    </footer>
 
-        <!-- bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    </footer>
 </body>
+
+</html>

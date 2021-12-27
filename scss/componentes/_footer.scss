@@ -1,0 +1,12 @@
+footer{
+    font-size: 13px;
+    border-bottom: 2px;
+    border-style: ridge;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(138, 151, 148);
+    ul{
+    list-style-type: none;
+    }
+}

@@ -1,0 +1,17 @@
+@media screen and (min-width:768px){
+    footer{
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $bg-footer;
+        padding: 15px 25px;
+        justify-content: space-between;
+            ul{
+            list-style: none;
+            }
+                .designe{
+                padding: 5px 1px;
+                }
+        }
+    }

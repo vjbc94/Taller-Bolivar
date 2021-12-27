@@ -1,0 +1,17 @@
+header{
+    top: 0%;
+    background-color: $bg-header;
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        ul {
+        text-align: center;
+            li {
+            display: flex;
+            margin: 15px 0;
+            }
+        }
+    }
+}

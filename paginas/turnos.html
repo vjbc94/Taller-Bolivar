@@ -5,19 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnos-Taller Bolivar</title>
-    <link rel="shortcut icon" href="../imagenes/mecanico.png" type="icono">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/main.css">
-    <!-- Bootstrap -->
+    <title>Taller Bolivar</title>
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="icono">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -31,7 +27,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="btn btn-outline-primary" href="../index.html">Inicio</a>
-                        </li>
+                        </li class=>
                         <li class="nav-item">
                             <a class="btn btn-outline-primary" href="servicios.html">Servicios</a>
                         </li>
@@ -50,38 +46,45 @@
         </nav>
     </header>
 
-    <main>
-        <h2 class="ultimo" id="encabezado">Turnos</h2>
-            <section class="formulario">
+    <main class="contacto">
+        <div class="barra">
+            <h2 class="fs-1" id="encabezado">Turnos</h2>
+            <hr class="barra-sub">
+        </div>
+        <section class="col-xs-12 col-md-10 col-xl-10">
+            <div class="formulario">
                 <h3>Agendar</h3>
-                <form class="form">
-                    <div>
-                        <input placeholder="Nombre y Apellido" type="text" name="nombre y apellido" id="nombre">
-                    </div>
-                    <div>
-                        <input placeholder="Telefono" type="number" name="telefono" id="telefono">
-                    </div>
-                    <div>
-                        <input placeholder="Mail" type="text" name="mail" id="mail">
-                    </div>
-                    <div>
-                        <textarea placeholder="Comentario" name="comentario" id="comentario"></textarea>
-                        
-                    </div>
-                    <div>
-                        <select name="hora">
-                            <option class="horario"  value="Turno">Elegir Horario</option>
-                            <option class="horario"  value="Mañana">8:00am-12:00pm</option>
-                            <option class="horario"  value="Tarde">2:00pm-5:00pm</option>
-                        </select>
-                    </div>
-                    <div class="enviar">
-                        <input class="asad" type="submit" value="Enviar">
-                        <input class="limpiar" type="reset" value="Limpiar">
-                    </div>
+                <div>
+                    <input placeholder="Nombre y Apellido" type="text" name="nombre y apellido" id="nombre">
+                </div>
+                <div>
+                    <input placeholder="Telefono" type="number" name="telefono" id="telefono">
+                </div>
+                <div>
+                    <input placeholder="Mail" type="text" name="mail" id="mail">
+                </div>
+                <div>
+                    <textarea placeholder="Comentario" name="comentario" id="comentario"></textarea>
+                </div>
+                <div class="hora">
+                    <select name="hora">
+                        <option class="horario" value="Turno">Elegir Horario</option>
+                        <option class="horario" value="Mañana">8:00am-12:00pm</option>
+                        <option class="horario" value="Tarde">2:00pm-5:00pm</option>
+                    </select>
+                </div>
+                <div class="enviar">
+                    <input class="asad" type="submit" value="Enviar">
+                    <input class="limpiar" type="reset" value="Limpiar">
+                </div>
                 </form>
-            </section>
+            </div>
+            <form class="form">
+
+        </section>
     </main>
+
+    <!-- footeer -->
 
     <footer class="footer">
         <div class="footer-div">
@@ -109,8 +112,10 @@
             </div>
         </div>
     </footer>
-    <!--Bootstrap Js -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
+</html>
