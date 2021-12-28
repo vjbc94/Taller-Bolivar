@@ -3,26 +3,25 @@ $bg-footer: rgb(138, 151, 148);
 
 /* Mapas */
 $cuadros: (
-    cuadrouno:  green,
-    cuadrodos: red,
-    cuadrotres: yellow,
+    cuadrouno:  black,
+    cuadrodos: #E9EAEA,
 );
 
 @each $fondo, $color in $cuadros {
     .general-#{$fondo} {
-        background-color: $color;}
+        background-color: $color;
+        margin: 0px 20px 40px 20px;
+        box-shadow: 5px 5px 5px 0px black;
+    }
 }
-
 /* Extend */
 
-.ul-li{
-    font-size:  16px;
+h6 {
+    color: black
 }
-
-.extend{
-    @extend .ul-li;
-    font-size: 25px;
-    color: blue;
+.cuadrouno{
+    @extend h6 ;
+    color: white;
 }
 
 /* Mixin */
@@ -43,7 +42,7 @@ $cuadros: (
     flex-direction: column;
     .barra-sub{
     border: solid 1px black;
-    width: 250px;
+    width: 200px;
     align-items: center;
     }
 }

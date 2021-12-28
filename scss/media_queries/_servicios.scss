@@ -4,15 +4,9 @@
         text-align: center;
         flex-direction: row;
         justify-content: space-evenly;
-        .general {
-            margin: 0px 20px 40px 20px;
-            background-color: #E9EAEA;
-            box-shadow: 5px 5px 5px 0px #d4d4d7;
-            min-width: 200px;
             img{
-                width: 300px;
-                margin: 30px;
+                width: 150px;
+                margin: 10px;
             }
         }
-    }
 }
