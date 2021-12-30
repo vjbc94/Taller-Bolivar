@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@700&family=Quicksand:wght@400;600&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -62,7 +63,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #8a9794; }
+  background-color: black;
+  color: white; }
+  footer img:hover {
+    transform: scale(1.1); }
   footer ul {
     list-style-type: none; }
 
@@ -71,35 +75,32 @@ footer {
   text-align: center;
   flex-direction: column;
   align-items: center; }
-  .main-servicios .general {
-    margin: 0px 20px 40px 20px;
-    background-color: #E9EAEA;
-    box-shadow: 5px 5px 5px 0px #d4d4d7;
-    min-width: 200px; }
-    .main-servicios .general img {
-      width: 300px;
-      margin: 30px; }
+  .main-servicios img {
+    width: 300px;
+    margin: 30px; }
 
 .videos {
   display: flex;
   padding: 50px 10px 100px 10px;
   text-align: center;
   flex-direction: column; }
+  .videos .vid {
+    width: 280px; }
+
+.marcasimagenes {
+  width: 100%; }
 
 .cuimotor {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
   .cuimotor h3 {
-    font-weight: 800;
     grid-column: 3/11;
     grid-row: 1/2;
     width: 100%;
-    font-size: 1rem;
     text-align: center; }
   .cuimotor p {
     grid-row: 3/3;
-    grid-column: 3/12;
-    font-size: 16px; }
+    grid-column: 3/12; }
   .cuimotor img {
     grid-row: 2/2;
     grid-column: 2/12;
@@ -109,11 +110,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
   .frenos h3 {
-    font-weight: 800;
     grid-column: 4/9;
     grid-row: 1/2;
     width: 100%;
-    font-size: 1rem;
     text-align: center; }
   .frenos p {
     grid-row: 3/3;
@@ -128,11 +127,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
   .luces h3 {
-    font-weight: 800;
     grid-column: 3/11;
     grid-row: 1/2;
     width: 100%;
-    font-size: 1rem;
     text-align: center; }
   .luces p {
     grid-row: 3/3;
@@ -154,7 +151,8 @@ footer {
     padding: 15vh;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    background-color: white; }
     .contacto .formulario input {
       margin-bottom: 15px;
       padding: 10px;
@@ -207,9 +205,9 @@ footer {
     .main-index .uno img {
       grid-row: 1/1;
       grid-column: 3/8;
-      width: 60%;
+      width: 90%;
       border-radius: 25px;
-      height: 80%; }
+      height: 100%; }
   .main-index .dos {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -218,9 +216,9 @@ footer {
     .main-index .dos img {
       grid-row: 1/2;
       grid-column: 9/12;
-      width: 90%;
+      width: 500px;
       border-radius: 25px;
-      height: 90%; }
+      height: 450px; }
     .main-index .dos p {
       grid-row: 1/2;
       grid-column: 2/7;
@@ -237,15 +235,18 @@ footer {
 
 @media screen and (min-width: 768px) {
   footer {
-    font-size: 13px;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #8a9794;
+    background-color: black;
     padding: 15px 25px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: white; }
     footer ul {
       list-style: none; }
+      footer ul .ul-li {
+        margin-bottom: 10px; }
     footer .designe {
       padding: 5px 1px; } }
 
@@ -264,7 +265,15 @@ footer {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    flex-direction: row; } }
+    flex-direction: row; }
+    .videos .vid {
+      width: 100%; }
+  .marcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .marcas .slider {
+      max-width: 700px; } }
 
 @media screen and (min-width: 768px) {
   .cuimotor {
@@ -275,13 +284,11 @@ footer {
     .cuimotor h3 {
       grid-column: 2/6;
       grid-row: 1/2;
-      width: 100%;
-      font-size: 18px;
       text-align: center; }
     .cuimotor p {
       grid-row: 2/2;
       grid-column: 7/12;
-      font-size: 16px; }
+      font-size: 1rem; }
     .cuimotor img {
       grid-row: 2/2;
       grid-column: 2/8;
@@ -297,7 +304,6 @@ footer {
       grid-column: 2/6;
       grid-row: 1/2;
       width: 100%;
-      font-size: 18px;
       text-align: center; }
     .frenos p {
       grid-row: 2/2;
@@ -318,7 +324,6 @@ footer {
     .luces h3 {
       grid-row: 1/2;
       width: 100%;
-      font-size: 18px;
       text-align: center;
       grid-column: 2/6; }
     .luces p {
@@ -342,7 +347,9 @@ footer {
     padding: 15vh;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    background-image: url(/imagenes/wallper.jpg);
+    background-size: cover; }
     .formulario input {
       margin-bottom: 15px;
       padding: 10px;
@@ -369,7 +376,9 @@ footer {
         margin-right: 20px; } }
 
 .fs-1 {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Fahkwang';
+  font-weight: 700; }
 
 .uno {
   display: grid;
@@ -381,7 +390,8 @@ footer {
     grid-column: 4/10;
     width: 225px;
     border-radius: 25px;
-    height: 300px; }
+    height: 300px;
+    margin-bottom: 5px; }
   .uno p {
     grid-row: 2/2;
     grid-column: 4/10;
@@ -398,7 +408,8 @@ footer {
     grid-column: 4/10;
     width: 220px;
     border-radius: 25px;
-    height: 300px; }
+    height: 300px;
+    margin-bottom: 10px; }
   .dos p {
     grid-row: 2/2;
     grid-column: 4/10;

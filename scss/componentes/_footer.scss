@@ -5,7 +5,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(138, 151, 148);
+    background-color: $bg-footer;
+    color: white;
+    img:hover{
+        transform: scale(1.10);
+    }
     ul{
     list-style-type: none;
     }

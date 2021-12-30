@@ -7,14 +7,12 @@
         h3{
             grid-column: 2/6;
             grid-row:1/2;
-            width:100%;
-            font-size: 18px;
             text-align: center;
         }
         p{
             grid-row: 2/2;
             grid-column: 7/12;
-            font-size: 16px;
+            font-size: 1rem;
         }
         img{
             grid-row: 2/2;
@@ -33,7 +31,6 @@
             grid-column: 2/6;
             grid-row:1/2;
             width:100%;
-            font-size: 18px;
             text-align: center;
         }
         p {
@@ -58,7 +55,6 @@
         h3{
             grid-row:1/2;
             width:100%;
-            font-size: 18px;
             text-align: center;
             grid-column: 2/6;
         }
