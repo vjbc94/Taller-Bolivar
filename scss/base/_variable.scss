@@ -31,7 +31,7 @@ h6 {
     box-shadow: 5px 5px 5px 0px black;
 }
 
-.img {
+.partes, .chichi{
     @include img
 }
 
@@ -47,3 +47,68 @@ h6 {
     }
 }
 
+
+.partes{
+    animation-name: partes;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes partes {
+    0%{
+        transform: translate(-30vw);
+    }
+
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.chichi{
+    animation-name: chichi;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes chichi {
+    0%{
+        transform: translate(30vw);
+    }
+
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+
+.empresa{
+    animation-name: empresa;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes empresa {
+    0%{
+        transform: translate(30vw);
+    }
+
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.rubro{
+    animation-name: rubro;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rubro {
+    0%{
+        transform: translate(-30vw);
+    }
+
+    100%{
+        transform: translateX(0vw);
+    }
+}

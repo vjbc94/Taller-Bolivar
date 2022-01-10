@@ -6104,11 +6104,11 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url(/imagenes/menos.png);
+  background-image: url("/imagenes/menos.png");
 }
 
 .carousel-control-next-icon {
-  background-image: url(/imagenes/mas.png);
+  background-image: url("/imagenes/mas.png");
 }
 
 .carousel-indicators {
