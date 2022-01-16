@@ -4,12 +4,12 @@
     h3{
         grid-column: 3/11;
         grid-row: 1/2;
-        width: 100%;
         text-align: center;
     }
     p{
         grid-row: 3/3;
         grid-column: 3/12;
+        font-size: 1rem;
     }
     img{
         grid-row: 2/2;
@@ -24,13 +24,12 @@
     h3{
         grid-column: 4/9;
         grid-row: 1/2;
-        width: 100%;
         text-align: center;
     }
     p {
         grid-row: 3/3;
         grid-column: 3/12;
-        font-size: 16px;
+        font-size: 1rem;
     }
     img{
         grid-row:2/2;
@@ -42,16 +41,16 @@
 .luces{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 15px;
     h3{
         grid-column: 3/11;
         grid-row: 1/2;
-        width: 100%;
         text-align: center;
     }
     p{
         grid-row: 3/3;
         grid-column: 3/12;
-        line-height: 2rem;
+        font-size: 1rem;
     }
     img{
         grid-row:2/2;

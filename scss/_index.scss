@@ -12,9 +12,9 @@
     img{
         grid-row: 1/2;
         grid-column: 4/10;
-        width: 225px;
-        border-radius: 25px;
-        height: 300px;
+        width: 100%;
+        border-radius: 50%;
+        height: 100%;
         margin-bottom: 5px;
     }
         p{
@@ -33,9 +33,9 @@
     img{
         grid-row: 1/2;
         grid-column: 4/10;
-        width: 220px;
-        border-radius: 25px;
-        height: 300px;
+        width: 100%;
+        border-radius: 50%;
+        height: 100%;
         margin-bottom: 10px;
     }
         p{
@@ -45,3 +45,4 @@
         font-size: 17px
     }
 }
+

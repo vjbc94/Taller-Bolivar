@@ -4,9 +4,8 @@
         text-align: center;
         flex-direction: row;
         justify-content: space-evenly;
-            img{
-                width: 150px;
-                margin: 10px;
+            img:hover{
+                transform: scale(1.1);
             }
         }
 }
