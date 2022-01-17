@@ -71,7 +71,7 @@ h6, .cuadrouno {
 
 @keyframes empresa {
   0% {
-    transform: translate(30vw); }
+    transform: translate(-30vw); }
   100% {
     transform: translateX(0vw); } }
 
@@ -82,7 +82,7 @@ h6, .cuadrouno {
 
 @keyframes rubro {
   0% {
-    transform: translate(-30vw); }
+    transform: translate(30vw); }
   100% {
     transform: translateX(0vw); } }
 
@@ -148,8 +148,9 @@ footer {
     text-align: center; }
   .cuimotor p {
     grid-row: 3/3;
-    grid-column: 3/12;
-    font-size: 1rem; }
+    grid-column: 2/12;
+    font-size: 1rem;
+    text-align: center; }
   .cuimotor img {
     grid-row: 2/2;
     grid-column: 2/12;
@@ -164,8 +165,9 @@ footer {
     text-align: center; }
   .frenos p {
     grid-row: 3/3;
-    grid-column: 3/12;
-    font-size: 1rem; }
+    grid-column: 2/12;
+    font-size: 1rem;
+    text-align: center; }
   .frenos img {
     grid-row: 2/2;
     grid-column: 2/12;
@@ -181,8 +183,9 @@ footer {
     text-align: center; }
   .luces p {
     grid-row: 3/3;
-    grid-column: 3/12;
-    font-size: 1rem; }
+    grid-column: 2/12;
+    font-size: 1rem;
+    text-align: center; }
   .luces img {
     grid-row: 2/2;
     grid-column: 2/12;
@@ -196,11 +199,14 @@ footer {
   flex-direction: column;
   align-items: center; }
   .contacto .formulario {
+    background-image: url("../imagenes/wallper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 85%;
     padding: 15vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: white; }
+    align-items: center; }
     .contacto .formulario input {
       margin-bottom: 15px;
       padding: 10px;
