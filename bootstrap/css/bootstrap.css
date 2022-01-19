@@ -4043,6 +4043,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  align-items: flex-end
 }
 .navbar-nav .nav-link {
   padding-right: 0;
