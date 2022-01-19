@@ -4,8 +4,11 @@
         justify-content: space-around;
         text-align: center;
         flex-direction: row;
+        h3{
+            margin-bottom: 15px;
+        }
         .vid{
-            width: 100%;
+            max-width: 90%;
         }
     }
     .marcas{
